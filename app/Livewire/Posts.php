@@ -36,6 +36,7 @@ class Posts extends Component
 
     public function edit($id)
     {
+
         $post = Post::findOrFail($id);
         $this->post_id = $id;
         $this->title = $post->title;
